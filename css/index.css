@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../image/logo.jpg'); /* Caminho relativo para a imagem de background */
+  background-size: cover; /* Cobre toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* A imagem fica fixa durante o scroll */
+}
+
+header {
+  background-color: #013F5F; /* Fundo semi-transparente */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+  border-radius: 10px;
+  margin: 1rem auto;
+  max-width: 500px; /* Limita a largura do conteúdo principal */
+}
+
+footer {
+  background-color: #013F5F; /* Fundo semi-transparente */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#posts {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.post {
+  background-color: #fff;
+  width: calc(33% - 1rem); /* Define a largura de cada post */
+  margin-bottom: 1rem;
+  padding: 0.5rem; /* Reduz o padding dos posts */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do post */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra do post */
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 0.5rem; /* Reduz a margem inferior das imagens */
+}
+
+.post h2 {
+  font-size: 1.2rem; /* Reduz o tamanho da fonte do título */
+  margin-bottom: 0.5rem;
+}
+
+.post p {
+  font-size: 0.9rem; /* Reduz o tamanho da fonte do conteúdo */
+  margin-bottom: 0.5rem;
+}
